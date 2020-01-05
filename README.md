@@ -27,13 +27,13 @@ In order to run this App follow the following steps;
 4. Install the project dependencies:
    `pip3 install requirements.txt`
 
-5. Run `python manage.py migrate`
+5. Run `python3 manage.py migrate`
 
 6. Create admin account using `python3 manage.py createsuperuser`
 
 7. Run `python3 manage.py makemigrations joke-server` to make migrations for the application.
 
-8. Run `python manage.py migrate`
+8. Run `python3 manage.py migrate`
 
 9. Start the development server using `python3 manage.py runserver`
 
