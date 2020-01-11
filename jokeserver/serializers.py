@@ -5,4 +5,4 @@ from .models import Joke
 class JokeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Joke
-        fields = ('id', 'joke', 'punchLine', 'image')
+        fields = ('joke', 'punchLine', 'image')
