@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from jokeserver import views
+from jokeserver.views import JokeViewSet
 
 router = routers.DefaultRouter()
-router.register(r'jokes', views.JokeView, 'joke')
+router.register(r'jokes', JokeViewSet, 'joke')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
